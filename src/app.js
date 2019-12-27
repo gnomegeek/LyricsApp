@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const hbs = require('hbs')
 const path = require('path')
+const port = process.env.PORT || 3000
 
 publicPath = path.join(__dirname, '../public')
 viewsPath = path.join(__dirname, '../views')
@@ -40,6 +41,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 })
