@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const hbs = require('hbs')
 const path = require('path')
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 publicPath = path.join(__dirname, '../public')
 viewsPath = path.join(__dirname, '../views')
